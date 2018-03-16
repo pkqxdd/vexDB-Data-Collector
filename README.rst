@@ -6,7 +6,7 @@ General Information
 
 This repository includes script for collecting information of a VRC event from vexDB, primarily for better scouting. There are two different versions of script, one is synchronous and another is asynchronous. The asynchronous version should run a lot faster than the synchronous version, especially with slow Internet connection. However, if you are get any weird errors, try to run the synchronous version, as it is tested more. 
 
-Tested on Ubuntu 17.10, macOS 10.12.6. I don't guarantee it work on Windows 
+Tested on Ubuntu 17.10, macOS 10.12.6. I don't guarantee it work on Windows. Nobody likes Windows anyway.
 
 Dependencies
 ============
