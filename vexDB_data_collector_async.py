@@ -1,3 +1,6 @@
+#!/usr/local/bin/python3.6
+# -*- coding:utf-8 -*-
+
 import requests,json,os,datetime,sys,itertools,asyncio,aiohttp,html
 if len(sys.argv)==1:
     event_sku= "RE-VRC-17-3805"
@@ -8,13 +11,13 @@ sys.stdout.flush()
 event=json.loads(requests.get("https://api.vexdb.io/v1/get_events?sku=" + event_sku).content)
 sys.stdout.write('.')
 if event['size']==0:
-    sys.stdout.write("\nEvent with SKU %s not found. Exit." % event_sku)
+    sys.stdout.write("\nEvent with SKU %s not found. Exit.\n" % event_sku)
     sys.exit(0)
 event_name=event['result'][0]['name']
 teams = json.loads(requests.get("https://api.vexdb.io/v1/get_teams?sku=" + event_sku).content)
 sys.stdout.write('.')
 if teams['size']==0:
-    sys.stdout.write('\nTeam list for event "%s" is empty. Exit.'%event_name)
+    sys.stdout.write('\nTeam list for event "%s" is empty. Exit.\n'%event_name)
     sys.exit(0)
 if len(sys.argv)==3:
     path=os.path.expanduser(sys.argv[2])
@@ -95,4 +98,4 @@ finally:
     conn.close()
     loop.close()
     f.close()
-    sys.stdout.write('\nOutput file saved to "%s". Exit.'%path)
+    sys.stdout.write('\nOutput file saved to "%s". Exit.\n'%path)
