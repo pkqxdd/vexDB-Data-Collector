@@ -49,11 +49,7 @@ Below is sample output of first five lines of output of
 
 Note that the file will be in arbitrary order if you are running the asynchronous version. You can always sort the file based on individual columns using program such as Microsoft Excel. 
 
-	Team Number,Team Name,Organization,Region,Country,Autonomous Skill,Autonomous Rank,Driver Skill,Driver Rank,Combined Skills,Skill Rank,vRating,vRating Rank,Highest Match Score,Highest Score Alliance, Most Recent Event Average
-	8568B,Knights,North Andover High School,Massachusetts,United States,0,2293,62,1377,62,1622,45.50554203469,2243,112,6106B,78.66666666666667
-	6916H,BVT Team H,Blackstone Valley Regional High School,Massachusetts,United States,0,2293,40,2695,40,2778,62.628527679903,1205,138,4478X81118P,97.05555555555556
-	2442B,Bancroft Robodogs B,Bancroft School,Massachusetts,United States,12,1072,64,1332,64,1571,81.615867786521,427,119,2442C,79.21428571428571
-	2625A,A,Worcester Technical High School,Massachusetts,United States,0,2293,10,4786,10,4816,-15.27827328969,6948,109,2442B2442C,48.1
+.. image:: sample_output.png
 
 
 Disclaimer
