@@ -4,7 +4,7 @@
 General Information
 ===================
 
-This repository includes script for collecting information of a VRC event from vexDB, primarily for better scouting. There are two different versions of script, one is synchronous and another is asynchronous. The asynchronous version should run a lot faster than the synchronous version, especially with slow Internet connection. However, if you are get any weird errors, try to run the synchronous version, as it is tested more. 
+This repository includes script for collecting information of a VRC event from vexDB, primarily for better scouting. There are two different versions of script, one is synchronous and another is asynchronous. The asynchronous version is recommended should run a lot faster than the synchronous version, especially with slow Internet connection. 
 
 Tested on Ubuntu 17.10, macOS 10.12.6. I don't guarantee it work on Windows. Nobody likes Windows anyway.
 
@@ -38,7 +38,7 @@ Arguments
 ---------
 
 :Event Code: Optional, identifier of the vex event. It should be in format of ``RE-VRC-YY-XXXX``. Default to ``RE-VRC-17-3805``, the event code for 2018 VEX Robotics World Championship High School Division. You can find it on robotevents.com for a specific event. 
-:Output Path: Optional, path for the CSV file output. Default to ``/path/to/script/event-name data.csv``
+:Output Path: Optional, path for the CSV file output. Default to ``/path/to/script/event-name data.tsv``
 
 Sample Output
 =============
